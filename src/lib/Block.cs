@@ -33,6 +33,14 @@ namespace BryanPorter.Parcel
         public int BlockLength { get; private set; }
     }
 
+    public sealed class GenericBlock
+        : Block
+    {
+        public GenericBlock(BlockType type, int length)
+            : base(type, length)
+        { }
+    }
+
     public sealed class SectionHeader
         : Block
     {
